@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mmlove</title>
+
+<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/css.css">
+</head>
+<body><script src="/demos/googlegg.js"></script>
+
+
+<script src="js/typed.min.js"></script>
+
+<div class="buttons">
+  <button onClick="colorChange(colors[0][0],colors[0][1] )">Green</button>
+  <button onClick="colorChange(colors[2][0], colors[2][1])">Pink</button>
+  <button onClick="colorChange(colors[1][0], colors[1][1])">
+    Blue
+  </button>
+</div>
+<div id="typedStrings">
+  <p>Hello World!</p>
+  <p>Welcome to my home </p>
+</div>
+<span id="span"></span>
+
+<script type="text/javascript">
+$("#span").typed({
+  stringsElement: $("#typedStrings"),
+  typeSpeed: 70,
+  showCursor: false,
+  contentType: "html"
+});
+var colors = [["green","#00E676"], ["blue","#2196F3"], ["pink", "#ff005b"]];
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
+var initialColor = randomColor[0];
+var initialHeartColor = randomColor[1];
+function colorChange(color, heart){
+  $('#span').attr('class', '').addClass(color);
+  $('body p i').css('color', initialHeartColor);
+  $('body p i').css('color', heart);
+}
+colorChange(initialColor);
+</script>
+</div>
+</body>
+</html>
