@@ -1,48 +1,153 @@
-﻿<!doctype html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en" >
+
 <head>
-<meta charset="utf-8">
-<title>mmlove</title>
+<meta charset="UTF-8">
+<title>Winter Line Town qiqi manman Sally CSS3 Animation</title>
 
-<script src="js/jquery.min.js"></script>
-<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
-<body><script src="/demos/googlegg.js"></script>
 
+<body>
 
-<script src="js/typed.min.js"></script>
+<div class="cloud cloud-type1 cloud1"><div></div><div></div><div></div></div>
+<div class="cloud cloud-type2 cloud2"><div></div><div></div><div></div><div></div></div>
+<div class="cloud cloud-type3 cloud3"><div></div><div></div></div>
 
-<div class="buttons">
-  <button onClick="colorChange(colors[0][0],colors[0][1] )">Green</button>
-  <button onClick="colorChange(colors[2][0], colors[2][1])">Pink</button>
-  <button onClick="colorChange(colors[1][0], colors[1][1])">
-    Blue
-  </button>
+<div class="background">
+  <div id="snows"></div>
 </div>
-<div id="typedStrings">
-  <p>Hello World!</p>
-  <p>Welcome to my home </p>
-</div>
-<span id="span"></span>
 
-<script type="text/javascript">
-$("#span").typed({
-  stringsElement: $("#typedStrings"),
-  typeSpeed: 70,
-  showCursor: false,
-  contentType: "html"
-});
-var colors = [["green","#00E676"], ["blue","#2196F3"], ["pink", "#ff005b"]];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
-var initialColor = randomColor[0];
-var initialHeartColor = randomColor[1];
-function colorChange(color, heart){
-  $('#span').attr('class', '').addClass(color);
-  $('body p i').css('color', initialHeartColor);
-  $('body p i').css('color', heart);
-}
-colorChange(initialColor);
-</script>
+<div class="container">
+  <div id="characters1" class="characters"></div>
+  <div id="characters2" class="characters"></div>
+  <div id="characters3" class="characters"></div>
+  <div class="moon">
+    <div class="manman line-character">
+      <div class="head">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+        <div class="hair behind"></div>
+        <div class="temples left"></div>
+        <div class="temples right"></div>
+        <div class="face">
+            <div class="hair front"></div>
+          <div class="forehead left"></div>
+          <div class="forehead right"></div>
+          <div class="wrinkles left"></div>
+          <div class="wrinkles right"></div>
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+          <div class="glasses">
+            <div class="glasses_bracket left"></div>
+            <div class="glasses_Lens left"></div>
+            <div class="glasses_bracket content"></div>
+            <div class="glasses_Lens right"></div>
+            <div class="glasses_bracket right"></div>
+          </div>
+          <div class="nose"></div>
+          <div class="mouth"></div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="scarf">
+          <div class=""></div>
+        </div>
+        <div class="arm left">
+          <div class="hand">
+            <div class="beer">
+              <div class="grip"></div>
+              <div class="water"></div>
+            </div>
+          </div>
+        </div>
+        <div class="arm right">
+          <div class="hand">
+            <div class="beer">
+              <div class="grip"></div>
+              <div class="water"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="qiqi line-character">
+      <div class="head">
+        <div class="hair front">
+          <div class="hair content"></div>
+        </div>
+        <div class="hair behind">
+          <div class="top top1"></div>
+          <div class="top top2"></div>
+          <div class="top top3"></div>
+          <div class="top top4"></div>
+          <div class="top top5"></div>
+          <div class="top top6"></div>
+          <div class="top top7"></div>
+          <div class="top top8"></div>
+        </div>
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+
+        <div class="face">
+            <div class="glasses">
+                <div class="glasses_bracket left"></div>
+                <div class="glasses_Lens left"></div>
+                <div class="glasses_bracket content"></div>
+                <div class="glasses_Lens right"></div>
+                <div class="glasses_bracket right"></div>
+              </div>
+              <div class="wrinkles left"></div>
+          <div class="wrinkles right"></div>
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+          <div class="nose"></div>
+          <div class="mouth"></div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="arm left">
+          <div class="beer">
+            <div class="grip"></div>
+            <div class="water"></div>
+          </div>
+        </div>
+        <div class="arm right">
+          <div class="beer">
+            <div class="grip"></div>
+            <div class="water"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sally line-character">
+      <div class="head">
+        <div class="eyes">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+        </div>
+        <div class="mouths">
+          <div class="mouth up"></div>
+          <div class="mouth down"></div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="wing">
+          <div class="beer">
+            <div class="grip"></div>
+            <div class="water"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<script src='js/scene.min.js'></script>
+<script src="js/script.js"></script>
+
+
 </body>
 </html>
