@@ -127,7 +127,7 @@ function createCharacters(target, chrs, no, rotate) {
 
 }
 
-createCharacters(characters1, "2018. 12. 25", 0, 0);
-createCharacters(characters2, "Year-End Party", 1, -50);
-createCharacters(characters3, "Christmas", 2, -5);
+createCharacters(characters1, "2019. 12. 15", 0, -150);
+createCharacters(characters2, "Happy Anniversary", 1, -290);
+createCharacters(characters3, "Two years Party", 2, -37);
 scene.playCSS();

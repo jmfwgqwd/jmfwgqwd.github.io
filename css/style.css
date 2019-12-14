@@ -21,92 +21,6 @@ html, body {
   width: 100%;
   height: 100%;
 }
-.cloud {
-  position: absolute;
-  opacity: 0.2;
-}
-.cloud-type1 {
-  width: 150px;
-  height: 80px;
-}
-.cloud div {
-  position: absolute;
-  background: white;
-  border-radius: 50%;
-}
-.cloud-type1 div:nth-child(1) {
-  width: 65%;
-  height: 50%;
-  left: 25%;
-}
-.cloud-type1 div:nth-child(2) {
-  width: 80%;
-  height: 50%;
-  top: 20%;
-  left: 10%;
-}
-.cloud-type1 div:nth-child(3) {
-  top: 40%;
-  width: 100%;
-  height: 50%;
-}
-
-.cloud-type2 {
-  width: 150px;
-  height: 80px;
-}
-
-.cloud-type2 div:nth-child(1) {
-  width: 60%;
-  height: 60%;
-  left: 30%;
-}
-.cloud-type2 div:nth-child(2) {
-  width: 60%;
-  height: 60%;
-  left: 0%;
-  top: 20%;
-}
-.cloud-type2 div:nth-child(3) {
-  width: 60%;
-  height: 60%;
-  left: 40%;
-  top: 20%;
-}
-.cloud-type2 div:nth-child(4) {
-  width: 60%;
-  height: 60%;
-  left: 15%;
-  top: 40%;
-}
-.cloud-type3 {
-  width: 150px;
-  height: 60px;
-}
-
-.cloud-type3 div:nth-child(1) {
-  width: 80%;
-  height: 60%;
-  top: 40%;
-}
-.cloud-type3 div:nth-child(2) {
-  width: 80%;
-  height: 60%;
-  left: 20%;
-}
-.cloud {
-  top: 65%;
-  left: 50%;
-}
-.cloud1 {
-  transform: translate(100px, -170px);
-}
-.cloud2 {
-  transform: translate(10px, 80px);
-}
-.cloud3 {
-  transform: translate(-230px, -10px);
-}
 
 .particle {
   position: absolute;
@@ -146,10 +60,10 @@ html, body {
 }
 .manman {
   position: absolute;
-  width: 150px;
-  height: 200px;
-  top: -116px;
-  left: -20px;
+    width: 150px;
+    height: 200px;
+    top: -108px;
+    left: -12px;
   transform-origin: 50% 100%;
   transform: scale(0.8) rotate(-20deg);
 }
@@ -293,14 +207,14 @@ html, body {
   height: 100%;
   border-radius: inherit;
   background: inherit;
-  transform-origin: calc(100% - 1px) 50%;
+  transform-origin: right;
 }
 .manman .eye:before {
   transform: rotate(30deg);
 }
-.manman .eye:after {
-  /* transform: rotate(-30deg); */
-}
+/* .manman .eye:after {
+  transform: rotate(-30deg);
+} */
 .manman .eye.left {
   right: 60%;
   transform: rotate(10deg);
@@ -674,7 +588,17 @@ html, body {
   transform: translate(-50%, 20px);
   /*   overflow: hidden; */
 }
-
+.qiqi .mouth:before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 9px;
+  background: #ffaaaa;
+  top: 53%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50% / 20% 20% 80% 80%;
+}
 .qiqi .body {
   position: absolute;
   top: 100px;
@@ -684,6 +608,16 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+}
+.qiqi .scarf{
+  position: absolute;
+  width: 100%;
+  height: 54%;
+  background-color: rgb(100, 100, 100);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, transparent), color-stop(0.5, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.5, transparent), color-stop(0.5, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+    -webkit-background-size: 8px 8px;
+  top: -20%;
+  border-radius: 42%;
 }
 .qiqi .arm {
   position: absolute;
@@ -861,7 +795,7 @@ html, body {
 
 .characters {
   position: absolute;
-  top: 65%;
+  top: 0%;
   left: 50%;
   transform:translate(-50%, -50%);
 }
@@ -883,34 +817,188 @@ html, body {
   color: #fafafa;
 }
 #characters1 {
-  width: 400px;
-  height: 400px;
+  width: 655px;
+  height: 655px;
 }
 #characters1 span {
-  transform-origin: 50% calc(50% + 200px);
+  transform-origin: 50% calc(50% + 320px);
 }
 #characters2 {
-  width: 480px;
-  height: 480px;
+  width: 655px;
+  height: 655px;
 }
 #characters2 span {
-  transform-origin: 50% calc(50% + 240px);
+  transform-origin: 50% calc(50% + 320px);
 }
 #characters3 {
-  width: 560px;
-  height: 560px;
+  width: 655px;
+  height: 655px;
 }
 #characters3 span {
-  transform-origin: 50% calc(50% + 280px);
+  transform-origin: 50% calc(50% + 320px);
 }
 
-.cloud, .characters, .moon {
-  top: 65%;
+.cloud, .moon {
+  top: 55%;
 }
-
-
+.characters{
+  top: 50%;
+}
+#bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#bg{
+  width: 621px;
+    height: 622px;
+}
+.flowerfoot1{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 95%;
+  left: 50%;
+  margin-left: -50px;
+  background: #fff;
+  border-radius:50% / 100% 100% 10px 10px ;
+}
+.flowerfoot2{
+  position: absolute;
+  width: 70px;
+  height: 110px;
+  top: 95%;
+  left: 50%;
+  margin-left: -35px;
+  background: #fff;
+  border-radius:50% / 100% 100% 10px 10px ;
+  border: 1px solid rgb(172, 172, 172);
+}
+.ribbon{
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  top: 95%;
+  left: 50%;
+  margin-left: -35px;
+  background: rgb(255, 125, 125);
+  border-radius: 50% / 0 0 100% 100%;
+}
+.ribbon1{
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  top: 100%;
+  left: 50%;
+  margin-left: -22px;
+  background: rgb(255, 255, 255);
+  border-radius:100% 0% 50% 50%;
+  border: 8px solid rgb(255, 125, 125);
+  transform: rotate(20deg);
+}
+.ribbon2{
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  top: 100%;
+  left: 50%;
+  margin-left: 5px;
+  background: rgb(255, 255, 255);
+  border-radius: 0% 100% 50% 50%;
+  border: 8px solid rgb(255, 125, 125);
+  transform: rotate(-20deg);
+}
+.ribbon3{
+  position: absolute;
+  width: 8px;
+  height: 70px;
+  top: 100%;
+  left: 50%;
+  margin-left: 0px;
+  background: rgb(255, 125, 125);
+  transform: rotate(-5deg);
+}
+.ribbon4{
+  position: absolute;
+  width: 8px;
+  height: 70px;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  background: rgb(255, 125, 125);
+  transform: rotate(5deg);
+}
 @media screen and (max-width: 430px) {
   .container {
     transform: scale(0.7);
+  }
+}
+
+
+
+
+.chest {
+  z-index: 1;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  top: 25%;
+  left: 33%;
+}
+
+.heart {
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(-90deg, rgb(228, 123, 149) 0%, #ca355a 40%);
+  animation: beat 1.7s ease 0s infinite normal;
+}
+
+.heart.center {
+  background: linear-gradient(-45deg, rgb(228, 123, 149) 0%, #ca355a 40%);
+}
+
+.heart.top {
+  z-index: 3;
+}
+
+.side {
+  width: 50px;
+  height: 50px;
+  border-radius: 110px;
+}
+
+.chest .center {
+  width: 45px;
+  height: 45px;
+  top: 18px;
+  left: 15px;
+  transform: rotateZ(225deg);
+  /*transform: rotate(45deg);*/
+}
+
+.chest .left {
+  left: 0px;
+}
+
+.chest .right {
+  right: 0px;
+}
+
+
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(225deg);
+    box-shadow:0 0 40px #ca355a;
+  }
+
+  50% {
+    transform: scale(1.1) rotate(225deg);
+    box-shadow:0 0 0px #ca355a;
+  }
+  100% {
+    transform: scale(1) rotate(225deg);
+  box-shadow:0 0 0px #ca355a;
   }
 }
