@@ -20,31 +20,48 @@ html, body {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* 弹窗内容 */
+/* --- 弹窗关闭按钮样式 --- */
+
+/* 弹窗内容容器需要设置为相对定位，以便让绝对定位的关闭按钮相对于它定位 */
 .modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 800px;
-  background-color: #fff;
+  position: relative; 
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% 从顶部和居中 */
   padding: 20px;
-  border-radius: 10px;
+  border: 1px solid #888;
+  width: 80%; /* 宽度 */
+  max-width: 800px; /* 最大宽度 */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-/* 关闭按钮 */
+/* 关闭按钮的样式 */
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
-  color: #333;
+  top: -10px;
+  right: -10px;
+  color: #fff;
+  background-color: #ff4444;
+  font-size: 28px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* 圆形按钮 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
 }
 
-.close-btn:hover {
-  color: #ff0000;
+/* 鼠标悬停在关闭按钮上时的效果 */
+.close-btn:hover,
+.close-btn:focus {
+  color: #fff;
+  background-color: #cc0000;
+  text-decoration: none;
+  cursor: pointer;
 }
 .background {
   position: absolute;
