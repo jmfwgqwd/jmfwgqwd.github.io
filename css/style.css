@@ -59,7 +59,7 @@ html, body {
 .close-btn:hover,
 .close-btn:focus {
   color: #fff;
-  background-color: #cc0000;
+  background-color: blue;
   text-decoration: none;
   cursor: pointer;
 }
