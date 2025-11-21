@@ -6,7 +6,35 @@ var rose1 = document.querySelector('.rose1');
 var rose2 = document.querySelector('.rose2');
 var rose3 = document.querySelector('.rose3');
 var rose4 = document.querySelector('.rose4');
+// 获取元素
+const heartElements = document.querySelectorAll('.chest .heart'); // 心形元素
+const modal = document.getElementById('videoModal');
+const video = document.getElementById('popupVideo');
+const closeBtn = document.querySelector('.close-btn');
 
+// 点击心形元素显示弹窗
+heartElements.forEach(heart => {
+  heart.addEventListener('click', () => {
+    modal.style.display = 'block';
+    video.play(); // 自动播放视频（部分浏览器可能需要用户交互后才能生效）
+  });
+});
+
+// 点击关闭按钮隐藏弹窗
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+  video.pause(); // 暂停视频
+  video.currentTime = 0; // 重置视频到开头
+});
+
+// 点击弹窗外部关闭弹窗
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+    video.pause();
+    video.currentTime = 0;
+  }
+});
 var lineDrawing = anime({
   targets: [leafOne, stickLine,leafTwo, leafS1,rose1, rose2, rose3, rose4],
   strokeDashoffset: [anime.setDashoffset, 0],
